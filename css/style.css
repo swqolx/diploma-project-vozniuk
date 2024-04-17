@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-
+html{
+  scroll-behavior: smooth;
+}
 :root {
   --text-color: #141414;
   --white-color: #fff;
@@ -157,6 +159,7 @@ a:hover {
   font-family: "Inter";
   width: 157px;
   height: 46px;
+  margin-top: 30px;
 }
 .main2 {
   background-image: url(/img/Rectangle\ 10.png);
@@ -256,13 +259,27 @@ a:hover {
   margin-top: 16px;
 }
 
+
+
 .footer {
   background: var(--background-color);
   height: 160px;
   display: flex;
   opacity: 0.8;
+  padding: 35px 0;
+  position: relative;
 }
-
+.footer::after{
+  content: "©2023 Avatar: The Way Of Water. All rights reserved";
+  position: absolute;
+  top: 87%;
+  right: 30%;
+  color: var(--white-color);
+}
+.footer-info{
+  display: flex;
+  flex-direction: column;
+}
 .footer-wraper {
   background-image: url("/img/Rectangle\ 104.png");
 
@@ -272,6 +289,13 @@ a:hover {
 
   background-size: cover;
 }
+.footer-line{
+  height: 153px;
+  width: 1px;
+  background: var(--white-color);
+  margin-left: 80px;
+  margin-right: 80px;
+}
 .abzac-footer {
   color: var(--white-color);
   margin-top: 50px;
@@ -279,12 +303,12 @@ a:hover {
 }
 .abzac-footer2 {
   color: var(--white-color);
-  margin-top: 120px;
+  margin-top: 16px;
 }
-
 .img-main2{
   width: 152px;
 height: 40px;
+
 }
 
 .main-abzac{
@@ -296,10 +320,17 @@ color: var(--text-color);
 }
 
 .main-item02{
-  width: 320px;
   height: 240px;
   background-color: var(--white-color);
   margin-bottom: 24px;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  row-gap: 40px;
+  padding-left: 84px;
+  padding-right: 84px;
 }
 
 .main-list02{
@@ -308,27 +339,24 @@ color: var(--text-color);
   justify-content: space-between;
   flex-wrap: wrap;
   align-content: space-between;
+  
+padding-bottom: 50px;
+padding-top: 20px;
 
-margin-top: 142px;
 }
-.main-item02:first-child{
-padding-left: 204px;
-}
-.main-item02:last-child{
- padding-right: 205px;
-}
-.main-item02:nth-child(3){
-  padding-right: 205px;
-}
-.main-item02:nth-child(4){
-  padding-left: 204px;
-}
+
 .main-title{
   font-family: var(--second-family);
 font-weight: 400;
 font-size: 32px;
-text-align:;
 color: var(--text-color);
 margin-left: 550px;
+padding-bottom: 10px;
+padding-top: 50px;
+}
 
+
+.main-list02{
+  padding-left: 200px;
+  padding-right: 200px;
 }
